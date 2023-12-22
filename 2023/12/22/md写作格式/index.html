@@ -4,7 +4,7 @@
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="theme-color" content=#58b77a>
-  <title>清影-个人博客</title>
+  <title>md格式写法 | 清影-个人博客</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="author" content="清影">
   <meta name="keywords" content="">
@@ -63,17 +63,18 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/font-awesome@4/css/font-awesome.min.css">
 <meta name="generator" content="Hexo 7.0.0"></head>
 <body>
-<div id="page">
+<div class="single">
 
+<div id="page">
 <div class="header">
-  <div id="lx-aside" style="background-image: url(https://cdn.jsdelivr.net/npm/theme-lx@0.4.4/source/dist/images/cover.min.jpeg)">
+  <div id="lx-aside" style="background-image: url(https://cdn.jsdelivr.net/npm/theme-lx@0.4.4/source/dist/images/post_cover.min.jpeg)" data-stellar-background-ratio="0.5">
     <div class="overlay">
       
-      <div class="featured">
+      <div class="page-title">
         <div class="avatar"><a href="/project/"><img src="/project/images/kemomimi.jpg" alt="清影"></a></div>
-        <span>清影</span>
-        <h1>清影-个人博客</h1>
-        <span>一个闲散慵懒的人!</span>
+        <span>2023-12-22</span>
+        <h2>md格式写法</h2>
+        <div class="tags"><i class="fa fa-tag"></i><a class="tag-none-link" href="/project/tag/%E6%95%99%E5%AD%A6/" rel="tag">教学</a></div>
         <div class="social-links">
     <a href="https://donasens.github.io/" target="_blank" title="social-link"><i class="fa fa-github fa-fw"></i></a>
     <a href="http://mail.qq.com/cgi-bin/qm_share?t=qm_mailme&amp;email=jL61u7q0u7u7vL7M-f2i7_Ph" target="_blank" title="social-link"><i class="fa fa-envelope fa-fw"></i></a>
@@ -84,12 +85,9 @@
 </div>
 <div id="lx-main-content">
   <div class="lx-post">
-
-  <div class="lx-entry padding">
-    <div>
-      <h2 class="title"><a href="/project/2023/12/22/md%E5%86%99%E4%BD%9C%E6%A0%BC%E5%BC%8F/">md格式写法</a></h2>
-      <span class="lx-post-detail"><i class="fa fa-calendar-o"></i> 2023-12-22 | <i class="fa fa-folder-o"></i> <a class="category-link" href="/project/category/%E5%8D%9A%E5%AE%A2%E6%95%99%E5%AD%A6/">博客教学</a></span>
-      <p><p>本篇文章用来列举md格式文件的文本写法，例如网页指向、文本加粗、图片引用等！</p>
+    <div class="lx-entry padding">
+      <div>
+        <p>本篇文章用来列举md格式文件的文本写法，例如网页指向、文本加粗、图片引用等！</p>
 <p>并附带写法文本以供复制粘贴使用。</p>
 <h2 id="基础文本用法"><a href="#基础文本用法" class="headerlink" title="基础文本用法"></a>基础文本用法</h2><h3 id="创建标题"><a href="#创建标题" class="headerlink" title="创建标题"></a>创建标题</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line">例子:</span><br><span class="line">  <span class="comment"># 标题</span></span><br><span class="line">  <span class="comment">## 二级标题</span></span><br><span class="line">  <span class="comment">### 三级标题</span></span><br><span class="line">标题可用于分类内快捷切换</span><br><span class="line">用<span class="string">&#x27;#&#x27;</span>的数量表示标题的等级</span><br><span class="line">需要注意的是<span class="string">&#x27;#&#x27;</span>后面需要添加一个空格</span><br><span class="line"></span><br><span class="line">也可以使用 <span class="string">&#x27;&lt;h1&gt;标题内容&lt;/h1&gt;&#x27;</span> 来表示标题等级</span><br><span class="line">例如<span class="string">&#x27;&lt;h1&gt;xxx&lt;/h1&gt;&#x27;</span>表示一级标题  h2则是二级标题</span><br><span class="line"></span><br><span class="line">此外也可以在文本行下面添加任意数量的<span class="string">&#x27;==&#x27;</span>表示一级标题</span><br><span class="line">或者添加任意数量的<span class="string">&#x27;--&#x27;</span>表示二级标题</span><br><span class="line">例如:</span><br><span class="line"><span class="string">&quot;一级标题文本&quot;</span></span><br><span class="line"><span class="string">&quot;============&quot;</span></span><br><span class="line"><span class="string">&quot;标题下的内容&quot;</span></span><br></pre></td></tr></table></figure>
 
@@ -102,13 +100,41 @@
 <h3 id="图片引用"><a href="#图片引用" class="headerlink" title="图片引用"></a>图片引用</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">引用图片的格式为</span><br><span class="line">![图片alt](图片链接 <span class="string">&quot;图片title&quot;</span>)</span><br><span class="line">例如：</span><br><span class="line">![清影的博客头像](/image/kemomimi.jpg <span class="string">&quot;清影的博客头像&quot;</span>)</span><br><span class="line"></span><br><span class="line">其中，如果想要为图片添加超链接,则需要使用方括号将引用围起来，并在后面添加超链接</span><br><span class="line">例如：</span><br><span class="line">[![清影的博客头像](/image/kemomimi.jpg <span class="string">&quot;点击跳转&quot;</span>)](https://donasens.github.io/)</span><br><span class="line"></span><br></pre></td></tr></table></figure>
 
 <p><a target="_blank" rel="noopener" href="https://donasens.github.io/"><img src="/project/image/kemomimi.jpg" alt="清影的博客头像" title="点击跳转"></a></p>
-</p>
-      <div class="post-button"><a class="btn" href="/project/2023/12/22/md%E5%86%99%E4%BD%9C%E6%A0%BC%E5%BC%8F/" rel="noopener"><i class="fa fa-angle-double-right fa-fw"></i>阅读更多</a></div>
+
+      </div>
     </div>
   </div>
+</div>
+<div class="lx-navigation">
+	<div class="lx-cover next lx-cover-sm" style="background-image: url(https://cdn.jsdelivr.net/npm/theme-lx@0.4.4/source/dist/images/footer-l.min.jpeg)">
+		<div class="overlay"></div>
+		<a class="copy" href="#">
+			<div class="display-t">
+				<div class="display-tc">
+					<div>
+						<span>Next</span>
+						<h3>没有更新的文章</h3>
+					</div>
+				</div>
+			</div>
+		</a>
+	</div>
+        <div class="lx-cover prev lx-cover-sm" style="background-image: url(https://cdn.jsdelivr.net/npm/theme-lx@0.4.4/source/dist/images/footer-r.min.jpeg)">
+		<div class="overlay"></div>
+		<a class="copy" href="#">
+			<div class="display-t">
+				<div class="display-tc">
+					<div>
+						<span>Prev</span>
+						<h3>没有更早的文章</h3>
+					</div>
+				</div>
+			</div>
+		</a>
+	</div>
+</div>
 
-
-
+</div>
 
 <footer>
   <div>
@@ -116,8 +142,6 @@
   </div>
 </footer>
 
-  </div>
-</div>
 </div>
 
 <button class="hamburger hamburger--arrow-r" type="button" title="menu">
